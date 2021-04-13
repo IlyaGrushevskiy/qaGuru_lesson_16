@@ -20,7 +20,7 @@ public class Tests extends BaseTest {
     public void addToCart() {
         Map<String, String> cookies = new Auth().login("qaguru@qa.guru", "qaguru@qa.guru1");
 
-        String body = bodies.bodyComputer();
+        String body = bodies.bodyReview();
 
         Response response = given()
                 .contentType("application/x-www-form-urlencoded; charset=UTF-8")
